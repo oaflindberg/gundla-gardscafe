@@ -4,10 +4,6 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-<<<<<<< HEAD
-=======
-    "test": "echo \"Error: no test specified\" && exit 1",
->>>>>>> ffcaca6863c33f82c658034cf8ca45b8f92dcb77
     "dev": "next dev",
     "build": "next build",
     "start": "next start"
@@ -18,11 +14,8 @@
     "@emotion/core": "^10.0.35",
     "@emotion/styled": "^10.0.27",
     "@sanity/client": "^1.150.1",
-<<<<<<< HEAD
     "emotion": "^10.0.27",
     "emotion-server": "^10.0.27",
-=======
->>>>>>> ffcaca6863c33f82c658034cf8ca45b8f92dcb77
     "next": "^9.5.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1"
