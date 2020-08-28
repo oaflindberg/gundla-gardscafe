@@ -14,14 +14,11 @@
     "static/development/_ssgManifest.js"
   ],
   "pages": {
-<<<<<<< HEAD
     "/": [
       "static/chunks/main.js",
       "static/chunks/webpack.js",
       "static/chunks/pages/index.js"
     ],
-=======
->>>>>>> ffcaca6863c33f82c658034cf8ca45b8f92dcb77
     "/_app": [
       "static/chunks/main.js",
       "static/chunks/webpack.js",
