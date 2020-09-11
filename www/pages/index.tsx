@@ -1,23 +1,44 @@
-import client from "client/api";
+import client from 'client/api';
+import Layout from 'components/Layout/Layout';
+import { Fragment } from 'react';
+import urlFor from '../utils/urlBuilder';
 
-export default function Home({data}) {
-  console.log(data)  
+export default function Home({ eventData, menuData }) {
+  console.log(eventData.body);
 
   return (
-    <div>
-      <h1>{data[0].title}</h1>
-    </div>
+    <Layout content={eventData}>
+      {eventData.map((item, i) => {
+        return (
+          <Fragment key={i}>
+            <h1>{item.body}</h1>
+            <img src={urlFor(item.mainImage).toString()}></img>
+          </Fragment>
+        );
+      })}
+      {menuData.map((item, i) => {
+        return (
+          <Fragment key={i}>
+            <h1>{item.title}</h1>
+            <p>{item.body}</p>
+          </Fragment>
+        );
+      })}
+    </Layout>
   );
 }
 
 export async function getStaticProps() {
-  const query = "*[_type == 'post']"
-  const content = await client.fetch(query)
+  const eventQuery = "*[_type == 'event']";
+  const eventContent = await client.fetch(eventQuery);
+
+  const menuQuery = "*[_type == 'menu']";
+  const menuContent = await client.fetch(menuQuery);
 
   return {
     props: {
-      data: content
-    }
-  }
-
+      eventData: eventContent,
+      menuData: menuContent,
+    },
+  };
 }

@@ -15,6 +15,7 @@
     "@emotion/core": "^10.0.35",
     "@emotion/styled": "^10.0.27",
     "@sanity/client": "^1.150.1",
+    "@sanity/image-url": "^0.140.19",
     "emotion": "^10.0.27",
     "emotion-server": "^10.0.27",
     "next": "^9.5.2",
