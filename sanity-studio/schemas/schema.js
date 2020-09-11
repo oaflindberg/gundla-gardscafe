@@ -8,6 +8,7 @@ import schemaTypes from 'all:part:@sanity/base/schema-type'
 import blockContent from './blockContent'
 import event from "./event"
 import menu from "./menu"
+import homepage from "./homepage";
 
 
 // Then we give our schema to the builder and provide the result to Sanity
@@ -21,6 +22,7 @@ export default createSchema({
     // in the studio.
     event,
     menu,
+    homepage,
     // When added to this list, object types can be used as
     // { type: 'typename' } in other document schemas
     blockContent
