@@ -4,7 +4,7 @@ const Layout = ({ children, content }) => {
   return (
     <>
       <Head>
-        <title>heheeh</title>
+        <title>{content[0].pageTitle}</title>
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </Head>
@@ -12,7 +12,7 @@ const Layout = ({ children, content }) => {
       <div style={{ display: 'flex', flexDirection: 'column' }}>{children}</div>
 
       <footer>
-        <div>Hej</div>
+        <div>FOOTER</div>
       </footer>
     </>
   );

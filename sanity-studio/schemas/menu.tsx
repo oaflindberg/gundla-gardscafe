@@ -8,14 +8,6 @@ export default {
       title: "Titel",
       type: "string",
     },
-    // {
-    //   name: "mainImage",
-    //   title: "Main image",
-    //   type: "image",
-    //   options: {
-    //     hotspot: true,
-    //   },
-    // },
     {
       name: "body",
       title: "Beskrivning",

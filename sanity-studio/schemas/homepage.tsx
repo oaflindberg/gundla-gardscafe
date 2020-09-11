@@ -4,6 +4,11 @@ export default {
   type: "document",
   fields: [
     {
+      name: "pageTitle",
+      title: "Sidtitel",
+      type: "string",
+    },
+    {
       name: "imageOne",
       title: "Huvudbild",
       type: "image",
@@ -45,8 +50,8 @@ export default {
       },
     },
     {
-      name: "book_button",
-      title: "Bokaknapp",
+      name: "calendar_button",
+      title: "Kalenderknapp",
       type: "string",
     },
     {

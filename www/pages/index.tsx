@@ -1,6 +1,5 @@
 import client from 'client/api';
 import Layout from 'components/Layout/Layout';
-import { Fragment } from 'react';
 import urlFor from '../utils/urlBuilder';
 import BlockContent from '@sanity/block-content-to-react';
 
@@ -16,8 +15,8 @@ export default function Home({ homepageData }) {
       <button type="button">{home.menu_button}</button>
       <h1>{home.titleTwo}</h1>
       <BlockContent blocks={home.descriptionTwo} />
-      <img src={urlFor(home.imageTwo).toString()}></img>
-      <button type="button">{home.book_button}</button>
+      <img src={urlFor(home.imageTwo).toString()} />
+      <button type="button">{home.calendar_button}</button>
       <button type="button">{home.catering_button}</button>
     </Layout>
   );
