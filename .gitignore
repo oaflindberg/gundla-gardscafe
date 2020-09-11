@@ -3,3 +3,4 @@ sanity-studio/node_modules
 node_modules
 yarn.lock
 www/.next
+www/yarn-error.log
