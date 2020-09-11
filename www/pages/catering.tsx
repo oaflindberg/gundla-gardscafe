@@ -13,18 +13,28 @@ export default function CateringPage({ cateringData, menuData }) {
   return (
     <Layout content={cateringData}>
       <h1>{catering.title}</h1>
-      <button type="button">{catering.contact_title}</button>
       <button
         type="button"
         onClick={() => {
-          setIsMenu(!isMenu);
+          setIsMenu(false);
+        }}
+      >
+        {catering.contact_title}
+      </button>
+      <button
+        type="button"
+        onClick={() => {
+          setIsMenu(true);
         }}
       >
         {catering.menu_title}
       </button>
-      <img src={urlFor(catering.imageOne).toString()} />
-      <BlockContent blocks={catering.catering_description} />
-      {isMenu &&
+      {!isMenu ? (
+        <>
+          <img src={urlFor(catering.imageOne).toString()} />
+          <BlockContent blocks={catering.catering_description} />
+        </>
+      ) : (
         menuData.map((item, i) => {
           return (
             <Fragment key={i}>
@@ -32,7 +42,8 @@ export default function CateringPage({ cateringData, menuData }) {
               <p>{item.body}</p>
             </Fragment>
           );
-        })}
+        })
+      )}
     </Layout>
   );
 }
