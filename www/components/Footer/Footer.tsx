@@ -1,22 +1,30 @@
 import client from 'client/api';
 import urlFor from 'utils/urlBuilder'
+import { FC } from 'react'
 
-export default function Footer({ footerData }) {
+interface FooterProps {
+  footerData?: any
+}
+
+const Footer: FC<FooterProps> = ( {footerData} ) => {
   console.log(footerData)
+
   return (
-    <div>
-      <h1>FUNKA DÅ FÖR FAN</h1>
-    </div>
+    <>
+      <h1>Hej</h1>
+    </>
   )
 }
 
 export async function getStaticProps() {
   const footerQuery = "*[_type == 'footer']";
-  const footerContent = await client.fetch(footerQuery)
+  const footerContent = await client.fetch(footerQuery);
 
   return {
     props: {
-      footerData: footerContent
+      footerData: footerContent,
     },
   };
 }
+
+export default Footer
