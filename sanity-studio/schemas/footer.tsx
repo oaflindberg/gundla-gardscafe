@@ -54,7 +54,7 @@ export default {
       type: 'string',
     },
     {
-      name: 'phone',
+      name: 'phone_number',
       title: 'Telefonnummer',
       type: 'string',
     },
