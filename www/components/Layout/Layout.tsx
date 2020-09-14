@@ -1,10 +1,12 @@
 import Head from 'next/head';
 import Footer from 'components/Footer/Footer'
 import GlobalStyle from 'styles/Global'
+import { Container } from './Style' 
+import { FC } from 'react';
 
 const Layout = ({ children, pageTitle }) => {
   return (
-    <>
+    <div>
       <Head>
         <title>{pageTitle}</title>
         <meta charSet="UTF-8" />
@@ -12,10 +14,10 @@ const Layout = ({ children, pageTitle }) => {
       </Head>
       <GlobalStyle />
 
-      <div style={{ display: 'flex', flexDirection: 'column' }}>{children}</div>
+      <Container>{children}</Container>
 
       <Footer />
-    </>
+    </div>
   );
 };
 
