@@ -5,7 +5,6 @@ import BlockContent from '@sanity/block-content-to-react';
 
 export default function Home({ homepageData }) {
   const home = homepageData[0];
-  console.log(home);
 
   return (
     <Layout content={homepageData}>
