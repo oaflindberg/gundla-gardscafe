@@ -7,7 +7,7 @@ export default function Home({ homepageData }) {
   const home = homepageData[0];
 
   return (
-    <Layout content={homepageData}>
+    <Layout pageTitle="Gundla Gårdscafé | Startsida">
       <img src={urlFor(home.imageOne).toString()}></img>
       <h1>{home.titleOne}</h1>
       <BlockContent blocks={home.descriptionOne} />

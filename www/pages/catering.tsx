@@ -6,12 +6,11 @@ import { Fragment, useState } from 'react';
 
 export default function CateringPage({ cateringData, menuData }) {
   const catering = cateringData[0];
-  console.log(menuData);
 
   const [isMenu, setIsMenu] = useState(false);
 
   return (
-    <Layout content={cateringData}>
+    <Layout pageTitle="Gundla Gårdscafé | Catering">
       <h1>{catering.title}</h1>
       <button
         type="button"
