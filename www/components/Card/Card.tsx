@@ -1,13 +1,12 @@
 import { StyledCard, Date } from './style'
-import {FC} from 'react'
 
 interface CardProps {
-  title: String,
-  date: String,
+  title: String
+  date: String
   description: String
 }
 
-const Card: FC<CardProps> = ({ title, date, description }) => {
+export default function Card({ title, date, description }: CardProps) {
   return (
     <StyledCard>
       <div>
@@ -20,5 +19,3 @@ const Card: FC<CardProps> = ({ title, date, description }) => {
     </StyledCard>
   )
 }
-
-export default Card;

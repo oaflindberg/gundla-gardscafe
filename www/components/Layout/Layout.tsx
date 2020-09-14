@@ -1,10 +1,15 @@
-import Head from 'next/head';
+import Head from 'next/head'
 import Footer from 'components/Footer/Footer'
 import GlobalStyle from 'styles/Global'
-import { Container } from './Style' 
-import { FC } from 'react';
+import { Container } from './Style'
+import client from 'client/api'
 
-const Layout = ({ children, pageTitle }) => {
+interface LayoutProps {
+  children: React.ReactNode
+  pageTitle: String
+}
+
+const Layout = ({ children, pageTitle }: LayoutProps) => {
   return (
     <div>
       <Head>
@@ -18,7 +23,6 @@ const Layout = ({ children, pageTitle }) => {
 
       <Footer />
     </div>
-  );
-};
-
-export default Layout;
+  )
+}
+export default Layout
