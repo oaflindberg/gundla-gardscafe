@@ -1,6 +1,6 @@
 import client from 'client/api';
 import Layout from 'components/Layout/Layout';
-import urlFor from '../utils/urlBuilder';
+import urlFor from 'utils/urlBuilder';
 import BlockContent from '@sanity/block-content-to-react';
 
 export default function Home({ homepageData }) {
@@ -23,12 +23,6 @@ export default function Home({ homepageData }) {
 }
 
 export async function getStaticProps() {
-  // const eventQuery = "*[_type == 'event']";
-  // const eventContent = await client.fetch(eventQuery);
-
-  // const menuQuery = "*[_type == 'menu']";
-  // const menuContent = await client.fetch(menuQuery);
-
   const homepageQuery = "*[_type == 'homepage']";
   const homepageContent = await client.fetch(homepageQuery);
 
