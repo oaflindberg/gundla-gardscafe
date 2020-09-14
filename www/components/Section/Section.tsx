@@ -1,5 +1,9 @@
 const Section = ({ children }) => {
-  return { children };
+  return (
+    <section>
+      {children}
+    </section>
+    )
 };
 
 export default Section;
