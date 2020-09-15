@@ -1,4 +1,4 @@
-import { Global, css } from '@emotion/core';
+import { Global, css } from '@emotion/core'
 
 const GlobalStyle = () => {
   return (
@@ -10,9 +10,13 @@ const GlobalStyle = () => {
           padding: 0;
           box-sizing: border-box;
         }
+        a {
+          text-decoration: none;
+          color: inherit;
+        }
       `}
     />
-  );
-};
+  )
+}
 
-export default GlobalStyle;
+export default GlobalStyle

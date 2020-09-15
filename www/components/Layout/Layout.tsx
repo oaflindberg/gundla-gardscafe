@@ -21,6 +21,8 @@ const Layout = ({ children, pageTitle, test }: LayoutProps) => {
       </Head>
       <GlobalStyle />
 
+      <div style={{ height: '10vh', backgroundColor: '#A7BBB1' }}></div>
+
       <Container>{children}</Container>
       <Navigation />
       <Footer />

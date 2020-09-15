@@ -6,10 +6,3 @@ export const StyledCard = styled.div`
   padding: 20px;
   display: flex;
 `
-
-export const Date = styled.div`
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  width: max-content
-`

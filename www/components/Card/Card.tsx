@@ -1,4 +1,4 @@
-import { StyledCard, Date } from './style'
+import { StyledCard } from './style'
 
 interface CardProps {
   title: String
@@ -13,9 +13,7 @@ export default function Card({ title, date, description }: CardProps) {
         <h1>{title}</h1>
         <p>{description}</p>
       </div>
-      <Date>
-        <h3>{date}</h3>
-      </Date>
+      <h3>{date}</h3>
     </StyledCard>
   )
 }

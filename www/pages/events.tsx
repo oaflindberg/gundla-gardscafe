@@ -6,16 +6,18 @@ import { format } from 'date-fns'
 export default function EventPage({ eventData }) {
   return (
     <Layout pageTitle="Gundla Gårdscafé | Evenemang">
-      {eventData.map((event, i) => {
-        return (
-          <Card
-            key={i}
-            title={event.title}
-            date={format(new Date(event.date), 'd LLLL')}
-            description={event.body}
-          />
-        )
-      })}
+      <div style={{ display: 'flex', overflowX: 'scroll' }}>
+        {eventData.map((event, i) => {
+          return (
+            <Card
+              key={i}
+              title={event.title}
+              date={format(new Date(event.date), 'd LLL')}
+              description={event.body}
+            />
+          )
+        })}
+      </div>
     </Layout>
   )
 }
