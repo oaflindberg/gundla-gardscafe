@@ -21,6 +21,7 @@ export const ButtonContainer = styled.div`
     border: none;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.08);
     color: #fff;
+    font-size: 1.2rem;
     margin: 18px 0;
     padding: 10px 50px;
     width: 100%;
