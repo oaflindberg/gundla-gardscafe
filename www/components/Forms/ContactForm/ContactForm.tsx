@@ -61,7 +61,12 @@ export default function ContactForm() {
           value="Contact Form Submission"
         />
       </fieldset>
-      <input type="submit" value="Submit" />
+      {status === 'SUCCESS' ? (
+        <p>Skickat!</p>
+      ) : (
+        <input type="submit" value="Submit" />
+      )}
+      {status === 'ERROR' && <p>Något gick fel, försökt igen!</p>}
     </form>
   )
 }

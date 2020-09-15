@@ -1,8 +1,9 @@
 import styled from '@emotion/styled'
 
 export const Container = styled.div`
-  min-height: min-content;
-  padding: 0 20px;
+  background: #fff8ed;
   display: flex;
   flex-direction: column;
+  min-height: min-content;
+  padding: 0 20px;
 `

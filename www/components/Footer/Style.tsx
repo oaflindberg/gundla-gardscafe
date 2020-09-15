@@ -2,10 +2,11 @@ import styled from '@emotion/styled'
 
 export const StyledFooter = styled.div`
   width: 100vw;
+  background: #e7cdaf;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  padding: 20px 0;
+  padding: 20px 0 80px 0;
   flex-direction: column;
 `
 
