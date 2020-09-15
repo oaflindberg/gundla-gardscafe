@@ -8,6 +8,7 @@ import menu from './menu';
 import homepage from './homepage';
 import catering from './catering';
 import footer from './footer';
+import navigation from './navigation';
 
 export default createSchema({
   name: 'default',
@@ -17,6 +18,7 @@ export default createSchema({
     homepage,
     catering,
     footer,
+    navigation,
     blockContent,
   ]),
 });
