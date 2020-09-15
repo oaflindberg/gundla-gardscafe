@@ -1,15 +1,17 @@
 import Head from 'next/head'
 import Footer from 'components/Footer/Footer'
+import Navigation from 'components/Navigation/Navigation'
 import GlobalStyle from 'styles/Global'
 import { Container } from './Style'
-import client from 'client/api'
 
 interface LayoutProps {
   children: React.ReactNode
   pageTitle: String
+  test?: any
 }
 
-const Layout = ({ children, pageTitle }: LayoutProps) => {
+const Layout = ({ children, pageTitle, test }: LayoutProps) => {
+  console.log(test)
   return (
     <div>
       <Head>
@@ -20,7 +22,7 @@ const Layout = ({ children, pageTitle }: LayoutProps) => {
       <GlobalStyle />
 
       <Container>{children}</Container>
-
+      <Navigation />
       <Footer />
     </div>
   )

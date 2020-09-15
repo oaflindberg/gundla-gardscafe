@@ -1,10 +1,10 @@
-import client from 'client/api';
-import Layout from 'components/Layout/Layout';
-import urlFor from 'utils/urlBuilder';
-import BlockContent from '@sanity/block-content-to-react';
+import client from 'client/api'
+import Layout from 'components/Layout/Layout'
+import urlFor from 'utils/urlBuilder'
+import BlockContent from '@sanity/block-content-to-react'
 
 export default function Home({ homepageData }) {
-  const home = homepageData[0];
+  const home = homepageData[0]
 
   return (
     <Layout pageTitle="Gundla Gårdscafé | Startsida">
@@ -18,16 +18,16 @@ export default function Home({ homepageData }) {
       <button type="button">{home.calendar_button}</button>
       <button type="button">{home.catering_button}</button>
     </Layout>
-  );
+  )
 }
 
 export async function getStaticProps() {
-  const homepageQuery = "*[_type == 'homepage']";
-  const homepageContent = await client.fetch(homepageQuery);
+  const homepageQuery = "*[_type == 'homepage']"
+  const homepageContent = await client.fetch(homepageQuery)
 
   return {
     props: {
       homepageData: homepageContent,
     },
-  };
+  }
 }

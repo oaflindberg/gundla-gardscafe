@@ -18,7 +18,6 @@ export default createSchema({
     homepage,
     catering,
     footer,
-    navigation,
     blockContent,
   ]),
 });
