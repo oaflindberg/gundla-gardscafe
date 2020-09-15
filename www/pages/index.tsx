@@ -2,7 +2,6 @@ import client from 'client/api'
 import Layout from 'components/Layout/Layout'
 import urlFor from 'utils/urlBuilder'
 import BlockContent from '@sanity/block-content-to-react'
-import ContactForm from 'components/Forms/ContactForm/ContactForm'
 
 export default function Home({ homepageData }) {
   const home = homepageData[0]
@@ -18,7 +17,6 @@ export default function Home({ homepageData }) {
       <img src={urlFor(home.imageTwo).toString()} />
       <button type="button">{home.calendar_button}</button>
       <button type="button">{home.catering_button}</button>
-      <ContactForm />
     </Layout>
   )
 }
