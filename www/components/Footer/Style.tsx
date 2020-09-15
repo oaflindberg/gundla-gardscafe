@@ -16,9 +16,15 @@ export const ButtonContainer = styled.div`
   flex-direction: column;
 
   button {
+    background: #892b26;
+    border-radius: 40px;
+    border: none;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.08);
+    color: #fff;
+    margin: 18px 0;
+    padding: 10px 50px;
     width: 100%;
-    padding: 5px 50px;
-    margin: 5px 0;
+    cursor: pointer;
   }
 `
 

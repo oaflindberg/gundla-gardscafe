@@ -15,8 +15,6 @@ export default function Footer() {
     })
   }, [])
 
-  console.log(data)
-
   return (
     <footer>
       {data && (
