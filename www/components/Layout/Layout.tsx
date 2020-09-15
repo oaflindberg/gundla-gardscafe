@@ -7,11 +7,9 @@ import { Container } from './Style'
 interface LayoutProps {
   children: React.ReactNode
   pageTitle: String
-  test?: any
 }
 
-const Layout = ({ children, pageTitle, test }: LayoutProps) => {
-  console.log(test)
+const Layout = ({ children, pageTitle }: LayoutProps) => {
   return (
     <div>
       <Head>
