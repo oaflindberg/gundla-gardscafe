@@ -9,4 +9,5 @@ www/.DS_Store
 www/node_modules
 www/.next
 www/yarn-error.log
+www/public/.DS_Store
 

@@ -1,8 +1,11 @@
 import styled from '@emotion/styled'
 
 export const Paper = styled.div`
-  /* background: url('images/paper_rip.svg'); */
+  background: url('/images/pieceofpaper.png');
   text-align: center;
+  background-size: cover;
+  height: auto;
+  padding: 5vh 0;
 `
 
 export const Btn = styled.button`
