@@ -4,6 +4,7 @@ import ContactForm from 'components/Forms/ContactForm/ContactForm'
 import urlFor from '../utils/urlBuilder'
 import BlockContent from '@sanity/block-content-to-react'
 import { Fragment, useState } from 'react'
+import { BtnContainer, CateringBtns } from 'styles/Catering'
 
 export default function CateringPage({ cateringData, menuData }) {
   const catering = cateringData[0]
@@ -13,22 +14,24 @@ export default function CateringPage({ cateringData, menuData }) {
   return (
     <Layout pageTitle="Gundla Gårdscafé | Catering">
       <h1>{catering.title}</h1>
-      <button
-        type="button"
-        onClick={() => {
-          setIsMenu(false)
-        }}
-      >
-        {catering.contact_title}
-      </button>
-      <button
-        type="button"
-        onClick={() => {
-          setIsMenu(true)
-        }}
-      >
-        {catering.menu_title}
-      </button>
+      <BtnContainer>
+        <CateringBtns
+          type="button"
+          onClick={() => {
+            setIsMenu(false)
+          }}
+        >
+          {catering.contact_title}
+        </CateringBtns>
+        <CateringBtns
+          type="button"
+          onClick={() => {
+            setIsMenu(true)
+          }}
+        >
+          {catering.menu_title}
+        </CateringBtns>
+      </BtnContainer>
       {!isMenu ? (
         <>
           <>

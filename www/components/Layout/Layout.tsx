@@ -16,10 +16,12 @@ const Layout = ({ children, pageTitle }: LayoutProps) => {
         <title>{pageTitle}</title>
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Cookie&family=Inter:wght@300;400;700&display=swap"
+          rel="stylesheet"
+        />
       </Head>
       <GlobalStyle />
-
-      <div style={{ height: '10vh', backgroundColor: '#A7BBB1' }}></div>
 
       <Container>{children}</Container>
       <Navigation />

@@ -1,17 +1,19 @@
 import Link from 'next/link'
-import { Nav } from './Style'
+import { Nav, Line } from './Style'
 
 export default function Navigation() {
   return (
     <Nav>
       <Link href="/catering">
-        <a>Catering</a>
+        <img src="/icons/catering_mobile.svg" />
       </Link>
+      <Line />
       <Link href="/">
-        <a>Hem</a>
+        <img src="/icons/sun_mobile.svg" />
       </Link>
+      <Line />
       <Link href="/events">
-        <a>Events</a>
+        <img src="/icons/event_mobile.svg" />
       </Link>
     </Nav>
   )
