@@ -18,12 +18,12 @@ export default {
     },
     {
       name: 'titleOne',
-      title: 'Rubrik',
+      title: 'Rubrik_1',
       type: 'string',
     },
     {
       name: 'descriptionOne',
-      title: 'Inledning_ett',
+      title: 'Inledning_1',
       type: 'blockContent',
     },
     {
@@ -33,17 +33,17 @@ export default {
     },
     {
       name: 'titleTwo',
-      title: 'Rubrik',
+      title: 'Rubrik_2',
       type: 'string',
     },
     {
       name: 'descriptionTwo',
-      title: 'Inledning_tva',
+      title: 'Inledning_2',
       type: 'blockContent',
     },
     {
       name: 'imageTwo',
-      title: 'Bild_tva',
+      title: 'Bild_2',
       type: 'image',
       options: {
         hotspot: true,
@@ -51,17 +51,17 @@ export default {
     },
     {
       name: 'titleThree',
-      title: 'Rubrik',
+      title: 'Rubrik_3',
       type: 'string',
     },
     {
       name: 'descriptionThree',
-      title: 'Inledning_tre',
+      title: 'Inledning_3',
       type: 'blockContent',
     },
     {
       name: 'imageThree',
-      title: 'Bild_tre',
+      title: 'Bild_3',
       type: 'image',
       options: {
         hotspot: true,
