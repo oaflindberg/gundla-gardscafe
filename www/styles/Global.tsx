@@ -24,7 +24,7 @@ const GlobalStyle = () => {
         h3 {
           font-family: 'Cookie', cursive;
           font-weight: 300;
-          font-size: 2.5rem;
+          font-size: 4rem;
         }
       `}
     />
