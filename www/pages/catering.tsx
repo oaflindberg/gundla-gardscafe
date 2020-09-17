@@ -7,6 +7,7 @@ import urlFor from '../utils/urlBuilder'
 import BlockContent from '@sanity/block-content-to-react'
 import { Fragment, useState } from 'react'
 import { HeroImage, BtnContainer, CateringBtns } from 'styles/Catering'
+import { ClientError } from '@sanity/client'
 
 export default function CateringPage({ cateringData, menuData }) {
   const catering = cateringData[0]
@@ -15,8 +16,15 @@ export default function CateringPage({ cateringData, menuData }) {
 
   return (
     <Layout pageTitle="Gundla Gårdscafé | Catering">
-      <HeroImage src={urlFor(catering.heroImage).toString()} alt="Hero image" />
-      <Section>
+      <Section
+        style={{
+          backgroundImage: `url(${urlFor(catering.heroImage).toString()})`,
+          height: '50vh',
+          color: '#eee',
+          backgroundSize: 'cover',
+          textAlign: 'center',
+        }}
+      >
         <h1>{catering.pageTitle}</h1>
         <BtnContainer>
           <CateringBtns
@@ -43,7 +51,9 @@ export default function CateringPage({ cateringData, menuData }) {
             <Section>
               <h1>{catering.title}</h1>
               <BlockContent blocks={catering.catering_description} />
-              <img src={urlFor(catering.imageOne).toString()} />
+            </Section>
+            <img src={urlFor(catering.imageOne).toString()} />
+            <Section>
               <h1>{catering.titleTwo}</h1>
               <BlockContent blocks={catering.event_description} />
             </Section>
