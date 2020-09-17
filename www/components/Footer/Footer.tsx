@@ -47,11 +47,11 @@ export default function Footer() {
             </a>
           </Container>
           <ContactContainer>
-            <div style={{ textAlign: 'center' }}>
+            <div style={{ textAlign: 'center', marginBottom: '15px' }}>
               <img src="/icons/phone_mobile.svg" />
               <a href="tel:+46708840717">{data.phone_number}</a>
             </div>
-            <div style={{ textAlign: 'center' }}>
+            <div style={{ textAlign: 'center', marginBottom: '15px' }}>
               <img src="/icons/mail_mobile.svg" />
               <a href={`mailto:${data.email}`}>{data.email}</a>
             </div>
