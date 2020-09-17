@@ -1,10 +1,12 @@
 import client from 'client/api'
 import Layout from 'components/Layout/Layout'
+import Section from 'components/Section/Section'
 import ContactForm from 'components/Forms/ContactForm/ContactForm'
+import MenuItem from 'components/MenuItem/MenuItem'
 import urlFor from '../utils/urlBuilder'
 import BlockContent from '@sanity/block-content-to-react'
 import { Fragment, useState } from 'react'
-import { BtnContainer, CateringBtns } from 'styles/Catering'
+import { HeroImage, BtnContainer, CateringBtns } from 'styles/Catering'
 
 export default function CateringPage({ cateringData, menuData }) {
   const catering = cateringData[0]
@@ -13,43 +15,49 @@ export default function CateringPage({ cateringData, menuData }) {
 
   return (
     <Layout pageTitle="Gundla Gårdscafé | Catering">
-      <h1>{catering.title}</h1>
-      <BtnContainer>
-        <CateringBtns
-          type="button"
-          onClick={() => {
-            setIsMenu(false)
-          }}
-        >
-          {catering.contact_title}
-        </CateringBtns>
-        <CateringBtns
-          type="button"
-          onClick={() => {
-            setIsMenu(true)
-          }}
-        >
-          {catering.menu_title}
-        </CateringBtns>
-      </BtnContainer>
+      <HeroImage src={urlFor(catering.heroImage).toString()} alt="Hero image" />
+      <Section>
+        <h1>{catering.pageTitle}</h1>
+        <BtnContainer>
+          <CateringBtns
+            type="button"
+            onClick={() => {
+              setIsMenu(false)
+            }}
+          >
+            {catering.contact_title}
+          </CateringBtns>
+          <CateringBtns
+            type="button"
+            onClick={() => {
+              setIsMenu(true)
+            }}
+          >
+            {catering.menu_title}
+          </CateringBtns>
+        </BtnContainer>
+      </Section>
       {!isMenu ? (
         <>
           <>
-            <img src={urlFor(catering.imageOne).toString()} />
-            <BlockContent blocks={catering.catering_description} />
+            <Section>
+              <h1>{catering.title}</h1>
+              <BlockContent blocks={catering.catering_description} />
+              <img src={urlFor(catering.imageOne).toString()} />
+              <h1>{catering.titleTwo}</h1>
+              <BlockContent blocks={catering.event_description} />
+            </Section>
           </>
-          <ContactForm />
+          <Section>
+            <ContactForm />
+          </Section>
         </>
       ) : (
         menuData.map((item, i) => {
-          return (
-            <Fragment key={i}>
-              <h1>{item.title}</h1>
-              <p>{item.body}</p>
-            </Fragment>
-          )
+          return <MenuItem key={i} title={item.title} description={item.body} />
         })
       )}
+      {/* </Section> */}
     </Layout>
   )
 }
