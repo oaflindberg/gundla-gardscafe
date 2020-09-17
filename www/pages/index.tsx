@@ -10,18 +10,22 @@ export default function Home({ homepageData }) {
 
   return (
     <Layout pageTitle="Gundla Gårdscafé | Startsida">
-      <Section style={{ backgroundImage: 'url(/images/homepage_hero.jpg)' }}>
-        <img src={urlFor(home.imageOne).toString()}></img>
+      <Section
+        style={{ backgroundImage: `url(${urlFor(home.heroImage).toString()})` }}
+      >
         <h1 style={{ color: 'white' }}>{home.titleOne}</h1>
-        <BlockContent style={{ color: 'white' }} blocks={home.descriptionOne} />
+        <BlockContent blocks={home.descriptionOne} />
         <Btn type="button">{home.catering_button}</Btn>
       </Section>
 
       <Section>
-        <h1>{home.titleTwo}</h1>
+        <h1 style={{ marginBottom: '5px' }}>{home.titleTwo}</h1>
         <BlockContent blocks={home.descriptionTwo} />
       </Section>
-      <img src={urlFor(home.imageTwo).toString()} />
+      <img
+        style={{ height: '30vh', objectFit: 'cover' }}
+        src={urlFor(home.imageTwo).toString()}
+      />
       <Btn type="button">{home.calendar_button}</Btn>
       <Paper>
         <Section>
