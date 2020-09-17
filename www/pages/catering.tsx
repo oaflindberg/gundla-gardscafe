@@ -5,9 +5,9 @@ import ContactForm from 'components/Forms/ContactForm/ContactForm'
 import MenuItem from 'components/MenuItem/MenuItem'
 import urlFor from '../utils/urlBuilder'
 import BlockContent from '@sanity/block-content-to-react'
-import { Fragment, useState } from 'react'
-import { HeroImage, BtnContainer, CateringBtns } from 'styles/Catering'
-import { ClientError } from '@sanity/client'
+import { useState } from 'react'
+import { BtnContainer, CateringBtns } from 'styles/Catering'
+// import { ClientError } from '@sanity/client'
 
 export default function CateringPage({ cateringData, menuData }) {
   const catering = cateringData[0]
