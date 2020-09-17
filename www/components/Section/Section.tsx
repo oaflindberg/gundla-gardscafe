@@ -2,7 +2,7 @@ import { StyledSection } from './Style'
 
 interface Props {
   [key: string]: any
-  children: React.ReactNode
+  children?: React.ReactNode
 }
 
 const Section = ({ children, style }: Props) => {
