@@ -10,10 +10,13 @@ export default function Home({ homepageData }) {
 
   return (
     <Layout pageTitle="Gundla Gårdscafé | Startsida">
-      <img src={urlFor(home.imageOne).toString()}></img>
-      <h1>{home.titleOne}</h1>
-      <BlockContent blocks={home.descriptionOne} />
-      <Btn type="button">{home.catering_button}</Btn>
+      <Section style={{ backgroundImage: 'url(/images/homepage_hero.jpg)' }}>
+        <img src={urlFor(home.imageOne).toString()}></img>
+        <h1 style={{ color: 'white' }}>{home.titleOne}</h1>
+        <BlockContent style={{ color: 'white' }} blocks={home.descriptionOne} />
+        <Btn type="button">{home.catering_button}</Btn>
+      </Section>
+
       <Section>
         <h1>{home.titleTwo}</h1>
         <BlockContent blocks={home.descriptionTwo} />
