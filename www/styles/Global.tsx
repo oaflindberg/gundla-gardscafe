@@ -26,6 +26,19 @@ const GlobalStyle = () => {
           font-weight: 300;
           font-size: 4rem;
         }
+
+        input[type='submit'] {
+          background: #47996d;
+          border-radius: 40px;
+          border: none;
+          box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.08);
+          color: #fbf3e0;
+          cursor: pointer;
+          font-size: 1.2rem;
+          margin: 0 0 50px 0;
+          padding: 10px 50px;
+          width: 50%;
+        }
       `}
     />
   )
