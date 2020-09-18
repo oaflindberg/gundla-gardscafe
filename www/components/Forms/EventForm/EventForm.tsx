@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { StyledForm } from './Style'
 
 export default function EventForm() {
   const [status, setStatus] = useState('')
@@ -30,7 +31,7 @@ export default function EventForm() {
       method="post"
       onSubmit={sendEmail}
     >
-      <fieldset id="fs-frm-inputs">
+      <StyledForm id="fs-frm-inputs">
         <label htmlFor="event">Evenemang</label>
         <input
           type="text"
@@ -86,11 +87,11 @@ export default function EventForm() {
           id="email-subject"
           value="Contact Form Submission"
         />
-      </fieldset>
+      </StyledForm>
       {status === 'SUCCESS' ? (
         <p>Skickat!</p>
       ) : (
-        <input type="submit" value="Submit" />
+        <input type="submit" value="Skicka" />
       )}
       {status === 'ERROR' && <p>Något gick fel, försökt igen!</p>}
     </form>

@@ -2,6 +2,7 @@ import Layout from 'components/Layout/Layout'
 import client from 'client/api'
 import Card from 'components/Card/Card'
 import EventForm from 'components/Forms/EventForm/EventForm'
+import Section from 'components/Section/Section'
 import { format } from 'date-fns'
 
 export default function EventPage({ eventData }) {
@@ -19,7 +20,9 @@ export default function EventPage({ eventData }) {
           )
         })}
       </div>
-      <EventForm />
+      <Section>
+        <EventForm />
+      </Section>
     </Layout>
   )
 }
