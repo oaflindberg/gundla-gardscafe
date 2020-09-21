@@ -7,6 +7,7 @@ import event from './event';
 import menu from './menu';
 import homepage from './homepage';
 import eventpage from './eventpage';
+import gallerypage from './gallerypage';
 import catering from './catering';
 import footer from './footer';
 
@@ -17,6 +18,7 @@ export default createSchema({
     menu,
     homepage,
     eventpage,
+    gallerypage,
     catering,
     footer,
     blockContent,

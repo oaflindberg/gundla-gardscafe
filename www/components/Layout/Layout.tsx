@@ -3,7 +3,6 @@ import Footer from 'components/Footer/Footer'
 import Navigation from 'components/Navigation/Navigation'
 import GlobalStyle from 'styles/Global'
 import { Container } from './Style'
-import { useMediaQuery } from 'react-responsive'
 
 interface LayoutProps {
   children: React.ReactNode
@@ -11,15 +10,6 @@ interface LayoutProps {
 }
 
 const Layout = ({ children, pageTitle }: LayoutProps) => {
-  const isDevice = {
-    mobile: useMediaQuery({
-      query: '(max-width: 767px)',
-    }),
-    desktop: useMediaQuery({
-      query: '(min-width: 768px)',
-    }),
-  }
-
   return (
     <div>
       <Head>
