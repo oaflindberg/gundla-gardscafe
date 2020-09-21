@@ -8,7 +8,7 @@ const StyledContainer = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 65vh;
+    height: 50%;
     margin-left: 10vw;
   }
 `

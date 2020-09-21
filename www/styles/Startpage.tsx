@@ -30,6 +30,7 @@ export const Btn = styled.button`
 
 export const SectionContainer = styled.div`
   margin-left: 20px;
+  margin-right: 20px;
 
   @media screen and (min-width: 768px) {
     display: flex;
