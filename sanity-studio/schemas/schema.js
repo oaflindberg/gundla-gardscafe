@@ -6,6 +6,7 @@ import blockContent from './blockContent';
 import event from './event';
 import menu from './menu';
 import homepage from './homepage';
+import eventpage from './eventpage';
 import catering from './catering';
 import footer from './footer';
 
@@ -15,6 +16,7 @@ export default createSchema({
     event,
     menu,
     homepage,
+    eventpage,
     catering,
     footer,
     blockContent,
