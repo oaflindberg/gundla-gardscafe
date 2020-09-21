@@ -23,4 +23,8 @@ export const Container = styled.div`
 export const Events = styled.div`
   display: flex;
   overflow-x: scroll;
+
+  @media screen and (min-width: 768px) {
+    margin-left: 10vw;
+  }
 `

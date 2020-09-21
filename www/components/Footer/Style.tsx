@@ -54,6 +54,11 @@ export const ContactContainer = styled.div`
   flex-direction: column;
   align-items: center;
 
+  div {
+    text-align: center;
+    margin-bottom: 15px;
+  }
+
   img {
     padding: 5px 5px 0 5px;
   }

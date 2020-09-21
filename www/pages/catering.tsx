@@ -43,17 +43,15 @@ export default function CateringPage({ cateringData, menuData }) {
       </Container>
       {!isMenu ? (
         <>
-          <>
-            <Section>
-              <h1>{catering.title}</h1>
-              <BlockContent blocks={catering.catering_description} />
-            </Section>
-            <Image src={urlFor(catering.imageOne).toString()} />
-            <Section>
-              <h1>{catering.titleTwo}</h1>
-              <BlockContent blocks={catering.event_description} />
-            </Section>
-          </>
+          <Section>
+            <h1>{catering.title}</h1>
+            <BlockContent blocks={catering.catering_description} />
+          </Section>
+          <Image src={urlFor(catering.imageOne).toString()} />
+          <Section>
+            <h1>{catering.titleTwo}</h1>
+            <BlockContent blocks={catering.event_description} />
+          </Section>
           <Section style={{ display: 'flex', alignItems: 'flex-start' }}>
             <ContactForm />
           </Section>

@@ -30,6 +30,10 @@ export const StyledCard = styled.div`
   p {
     padding: 0 20px;
   }
+
+  @media screen and (min-width: 768px) {
+    width: 25vw;
+  }
 `
 
 export const MainInfo = styled.div`
