@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import client from 'client/api'
 import Layout from 'components/Layout/Layout'
 import Section from 'components/Section/Section'
@@ -37,7 +38,9 @@ export default function Home({ homepageData }) {
         <StyledSection>
           <h1>{home.titleTwo}</h1>
           <BlockContent blocks={home.descriptionTwo} />
-          <Btn type="button">{home.calendar_button}</Btn>
+          <Link href="/events">
+            <Btn type="button">{home.calendar_button}</Btn>
+          </Link>
         </StyledSection>
         <Image src={urlFor(home.imageTwo).toString()} />
       </SectionContainer>
