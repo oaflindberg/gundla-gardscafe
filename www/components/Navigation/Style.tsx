@@ -5,7 +5,7 @@ export const Nav = styled.div`
   background: #2c2c2c;
   bottom: 0;
   display: flex;
-  height: 10vh;
+  height: 7vh;
   justify-content: space-evenly;
   position: fixed;
   align-items: center;

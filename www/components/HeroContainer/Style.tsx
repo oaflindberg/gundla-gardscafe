@@ -1,14 +1,13 @@
 import styled from '@emotion/styled'
 
 const StyledContainer = styled.div`
-  height: 40vh;
   margin-left: 20px;
+  margin-top: 7vh;
 
   @media screen and (min-width: 768px) {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 50%;
     margin-left: 10vw;
   }
 `

@@ -23,7 +23,7 @@ export default function Home({ homepageData }) {
           backgroundImage: `url(${urlFor(home.heroImage).toString()})`,
           backgroundSize: 'cover',
           margin: '0',
-          height: '60vh',
+          height: '70vh',
         }}
       >
         <HeroContainer>
