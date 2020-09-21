@@ -1,9 +1,10 @@
 import Link from 'next/link'
+import BlockContent from '@sanity/block-content-to-react'
 import client from 'client/api'
+import urlFor from 'utils/urlBuilder'
 import Layout from 'components/Layout/Layout'
 import Section from 'components/Section/Section'
-import urlFor from 'utils/urlBuilder'
-import BlockContent from '@sanity/block-content-to-react'
+import HeroContainer from 'components/HeroContainer/HeroContainer'
 import {
   Paper,
   Btn,
@@ -11,10 +12,8 @@ import {
   StyledSection,
   Image,
 } from 'styles/Startpage'
-import HeroContainer from 'components/HeroContainer/HeroContainer'
 
 export default function Home({ homepageData }) {
-  console.log(homepageData)
   const home = homepageData[0]
 
   return (

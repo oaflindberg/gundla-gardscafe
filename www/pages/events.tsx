@@ -1,11 +1,11 @@
-import Layout from 'components/Layout/Layout'
+import BlockContent from '@sanity/block-content-to-react'
+import { format } from 'date-fns'
 import client from 'client/api'
 import urlFor from 'utils/urlBuilder'
+import Layout from 'components/Layout/Layout'
 import Card from 'components/Card/Card'
 import EventForm from 'components/Forms/EventForm/EventForm'
 import Section from 'components/Section/Section'
-import BlockContent from '@sanity/block-content-to-react'
-import { format } from 'date-fns'
 import { Container } from 'styles/Event'
 
 export default function EventPage({ eventData, eventPageData }) {

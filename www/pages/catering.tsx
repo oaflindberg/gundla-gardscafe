@@ -1,11 +1,11 @@
+import BlockContent from '@sanity/block-content-to-react'
+import { useState } from 'react'
 import client from 'client/api'
+import urlFor from '../utils/urlBuilder'
 import Layout from 'components/Layout/Layout'
 import Section from 'components/Section/Section'
 import ContactForm from 'components/Forms/ContactForm/ContactForm'
 import MenuItem from 'components/MenuItem/MenuItem'
-import urlFor from '../utils/urlBuilder'
-import BlockContent from '@sanity/block-content-to-react'
-import { useState } from 'react'
 import { BtnContainer, CateringBtns, Image } from 'styles/Catering'
 
 export default function CateringPage({ cateringData, menuData }) {

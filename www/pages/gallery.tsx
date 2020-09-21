@@ -1,8 +1,8 @@
 import Layout from 'components/Layout/Layout'
-import { Container } from 'styles/Gallery'
+import { useEffect, useState } from 'react'
 import client from 'client/api'
 import urlFor from 'utils/urlBuilder'
-import { useEffect, useState } from 'react'
+import { Container } from 'styles/Gallery'
 
 export default function GalleryPage({ galleryData }) {
   const [gallery, setGallery] = useState<any>()
