@@ -6,22 +6,12 @@ import MenuItem from 'components/MenuItem/MenuItem'
 import urlFor from '../utils/urlBuilder'
 import BlockContent from '@sanity/block-content-to-react'
 import { useState } from 'react'
-import { BtnContainer, CateringBtns } from 'styles/Catering'
-import { useMediaQuery } from 'react-responsive'
+import { BtnContainer, CateringBtns, Image } from 'styles/Catering'
 
 export default function CateringPage({ cateringData, menuData }) {
   const catering = cateringData[0]
 
   const [isMenu, setIsMenu] = useState(false)
-
-  const isDevice = {
-    mobile: useMediaQuery({
-      query: '(max-width: 767px)',
-    }),
-    desktop: useMediaQuery({
-      query: '(min-width: 768px)',
-    }),
-  }
 
   return (
     <Layout pageTitle="Gundla Gårdscafé | Catering">
@@ -62,24 +52,13 @@ export default function CateringPage({ cateringData, menuData }) {
               <h1>{catering.title}</h1>
               <BlockContent blocks={catering.catering_description} />
             </Section>
-            {isDevice.desktop && (
-              <img
-                style={{ margin: ' 20px 10vw 20px 10vw', objectFit: 'cover' }}
-                src={urlFor(catering.imageOne).toString()}
-              />
-            )}
-            {isDevice.mobile && (
-              <img
-                style={{ height: '35vh', objectFit: 'cover' }}
-                src={urlFor(catering.imageOne).toString()}
-              />
-            )}
+            <Image src={urlFor(catering.imageOne).toString()} />
             <Section>
               <h1>{catering.titleTwo}</h1>
               <BlockContent blocks={catering.event_description} />
             </Section>
           </>
-          <Section style={{ display: 'flex', justifyContent: 'flex-start' }}>
+          <Section style={{ display: 'flex', alignItems: 'flex-start' }}>
             <ContactForm />
           </Section>
         </>

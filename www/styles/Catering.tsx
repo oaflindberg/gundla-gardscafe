@@ -14,3 +14,13 @@ export const CateringBtns = styled.button`
   font-size: 2rem;
   font-family: 'Inter', sans-serif;
 `
+
+export const Image = styled.img`
+  height: 35vh;
+  margin: 0;
+  object-fit: cover;
+
+  @media screen and (min-width: 768px) {
+    margin: 20px 10vw;
+  }
+`
