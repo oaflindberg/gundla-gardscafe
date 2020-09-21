@@ -30,6 +30,12 @@ export const Nav = styled.div`
   }
 `
 
+export const Container = styled.div`
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+`
+
 export const Line = styled.div`
   height: 100%;
   border: 1px solid rgba(255, 255, 255, 0.2);
