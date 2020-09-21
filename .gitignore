@@ -10,4 +10,5 @@ www/node_modules
 www/.next
 www/yarn-error.log
 www/public/.DS_Store
+www/public/icons/.DS_Store
 
