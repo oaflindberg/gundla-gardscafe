@@ -26,7 +26,7 @@ export default {
       title: 'Beskrivning',
       type: 'string',
       options: {
-        maxLength: 200,
+        maxLength: 50,
       },
     },
   ],

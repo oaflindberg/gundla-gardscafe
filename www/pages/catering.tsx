@@ -64,12 +64,15 @@ export default function CateringPage({ cateringData, menuData }) {
             </Section>
             {isDevice.desktop && (
               <img
-                style={{ margin: ' 20px 10vw 20px 10vw' }}
+                style={{ margin: ' 20px 10vw 20px 10vw', objectFit: 'cover' }}
                 src={urlFor(catering.imageOne).toString()}
               />
             )}
             {isDevice.mobile && (
-              <img src={urlFor(catering.imageOne).toString()} />
+              <img
+                style={{ height: '35vh', objectFit: 'cover' }}
+                src={urlFor(catering.imageOne).toString()}
+              />
             )}
             <Section>
               <h1>{catering.titleTwo}</h1>

@@ -6,8 +6,18 @@ import EventForm from 'components/Forms/EventForm/EventForm'
 import Section from 'components/Section/Section'
 import BlockContent from '@sanity/block-content-to-react'
 import { format } from 'date-fns'
+import { useMediaQuery } from 'react-responsive'
 
 export default function EventPage({ eventData, eventPageData }) {
+  const isDevice = {
+    mobile: useMediaQuery({
+      query: '(max-width: 767px)',
+    }),
+    desktop: useMediaQuery({
+      query: '(min-width: 768px)',
+    }),
+  }
+
   const pageData = eventPageData[0]
 
   return (
@@ -20,24 +30,31 @@ export default function EventPage({ eventData, eventPageData }) {
           backgroundSize: 'cover',
           fontWeight: 500,
           margin: 0,
+          paddingLeft: isDevice.mobile ? '20px' : 0,
+          display: 'flex',
+          flexDirection: 'column',
+          alignItems: isDevice.desktop ? 'center' : '',
+          textAlign: isDevice.desktop ? 'center' : 'left',
         }}
       >
         <h1>{pageData.pageTitle}</h1>
         <BlockContent blocks={pageData.descriptionOne} />
       </Section>
-      <div style={{ display: 'flex', overflowX: 'scroll' }}>
-        {eventData.map((event, i) => {
-          return (
-            <Card
-              key={i}
-              image={urlFor(event.mainImage).toString()}
-              title={event.title}
-              date={format(new Date(event.date), 'd LLL')}
-              description={event.body}
-            />
-          )
-        })}
-      </div>
+      <Section style={{ margin: isDevice.mobile ? '0' : '' }}>
+        <div style={{ display: 'flex', overflowX: 'scroll' }}>
+          {eventData.map((event, i) => {
+            return (
+              <Card
+                key={i}
+                image={urlFor(event.mainImage).toString()}
+                title={event.title}
+                date={format(new Date(event.date), 'd LLL')}
+                description={event.body}
+              />
+            )
+          })}
+        </div>
+      </Section>
       <Section>
         <EventForm />
       </Section>

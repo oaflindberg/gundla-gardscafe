@@ -1,5 +1,4 @@
 import { StyledCard, MainInfo } from './style'
-
 interface CardProps {
   title: String
   date: String
