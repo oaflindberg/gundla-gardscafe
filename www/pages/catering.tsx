@@ -7,18 +7,28 @@ import urlFor from '../utils/urlBuilder'
 import BlockContent from '@sanity/block-content-to-react'
 import { useState } from 'react'
 import { BtnContainer, CateringBtns } from 'styles/Catering'
-// import { ClientError } from '@sanity/client'
+import { useMediaQuery } from 'react-responsive'
 
 export default function CateringPage({ cateringData, menuData }) {
   const catering = cateringData[0]
 
   const [isMenu, setIsMenu] = useState(false)
 
+  const isDevice = {
+    mobile: useMediaQuery({
+      query: '(max-width: 767px)',
+    }),
+    desktop: useMediaQuery({
+      query: '(min-width: 768px)',
+    }),
+  }
+
   return (
     <Layout pageTitle="Gundla Gårdscafé | Catering">
       <Section
         style={{
           backgroundImage: `url(${urlFor(catering.heroImage).toString()})`,
+          margin: 0,
           height: '50vh',
           color: '#eee',
           backgroundSize: 'cover',
@@ -52,13 +62,21 @@ export default function CateringPage({ cateringData, menuData }) {
               <h1>{catering.title}</h1>
               <BlockContent blocks={catering.catering_description} />
             </Section>
-            <img src={urlFor(catering.imageOne).toString()} />
+            {isDevice.desktop && (
+              <img
+                style={{ margin: ' 20px 10vw 20px 10vw' }}
+                src={urlFor(catering.imageOne).toString()}
+              />
+            )}
+            {isDevice.mobile && (
+              <img src={urlFor(catering.imageOne).toString()} />
+            )}
             <Section>
               <h1>{catering.titleTwo}</h1>
               <BlockContent blocks={catering.event_description} />
             </Section>
           </>
-          <Section>
+          <Section style={{ display: 'flex', justifyContent: 'flex-start' }}>
             <ContactForm />
           </Section>
         </>
@@ -67,7 +85,6 @@ export default function CateringPage({ cateringData, menuData }) {
           return <MenuItem key={i} title={item.title} description={item.body} />
         })
       )}
-      {/* </Section> */}
     </Layout>
   )
 }
