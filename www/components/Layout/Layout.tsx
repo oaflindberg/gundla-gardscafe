@@ -34,7 +34,7 @@ const Layout = ({ children, pageTitle }: LayoutProps) => {
       <GlobalStyle />
 
       <Container>{children}</Container>
-      {isDevice.mobile && <Navigation />}
+      <Navigation />
       <Footer />
     </div>
   )
