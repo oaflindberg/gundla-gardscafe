@@ -23,6 +23,7 @@ export default function CateringPage({ cateringData, menuData }) {
           color: '#eee',
           backgroundSize: 'cover',
           textAlign: 'center',
+          justifyContent: 'center',
         }}
       >
         <h1>{catering.pageTitle}</h1>

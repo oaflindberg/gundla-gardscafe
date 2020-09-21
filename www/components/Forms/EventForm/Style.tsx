@@ -5,13 +5,14 @@ export const StyledForm = styled.fieldset`
   flex-direction: column;
   align-items: center;
   height: auto;
-  width: 90vw;
+  width: 89vw;
   padding: 20px 0;
   border: none;
   font-family: 'Inter', sans-serif;
 
   label {
     font-weight: 500;
+    margin-top: 10px;
   }
 
   input {

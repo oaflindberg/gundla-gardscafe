@@ -33,7 +33,7 @@ export default function ContactForm() {
       style={{
         display: 'flex',
         justifyContent: 'center',
-        alignItems: 'center',
+        alignItems: 'flex-start',
         flexDirection: 'column',
       }}
     >

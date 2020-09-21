@@ -9,6 +9,10 @@ export const StyledFooter = styled.div`
   padding: 20px 0 100px 0;
   flex-direction: column;
   border-radius: 20px 20px 0px 0px;
+
+  @media screen and (min-width: 768px) {
+    padding: 20px 0;
+  }
 `
 
 export const ButtonContainer = styled.div`
