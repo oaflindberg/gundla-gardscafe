@@ -19,6 +19,7 @@ export default function EventPage({ eventData, eventPageData }) {
           color: '#eee',
           backgroundSize: 'cover',
           fontWeight: 500,
+          margin: 0,
         }}
       >
         <h1>{pageData.pageTitle}</h1>
