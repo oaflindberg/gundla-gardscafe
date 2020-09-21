@@ -11,6 +11,10 @@ const StyledContainer = styled.div`
     margin-bottom: 0;
   }
 
+  h1 {
+    color: #eee;
+  }
+
   @media screen and (min-width: 768px) {
     display: flex;
     flex-direction: column;

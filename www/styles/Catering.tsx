@@ -24,3 +24,11 @@ export const Image = styled.img`
     margin: 20px 10vw;
   }
 `
+
+export const Container = styled.div`
+  height: 50vh;
+  margin: 0;
+  color: #eee;
+  text-align: center;
+  justify-content: center;
+`

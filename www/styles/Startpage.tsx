@@ -8,6 +8,10 @@ export const Paper = styled.div`
   background-size: cover;
   height: auto;
   padding: 5vh 0;
+
+  h1 {
+    margin-bottom: 0;
+  }
 `
 
 export const Btn = styled.button`

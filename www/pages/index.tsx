@@ -27,7 +27,7 @@ export default function Home({ homepageData }) {
         }}
       >
         <HeroContainer>
-          <h1 style={{ color: 'white' }}>{home.titleOne}</h1>
+          <h1>{home.titleOne}</h1>
           <BlockContent blocks={home.descriptionOne} />
           <Btn type="button">{home.catering_button}</Btn>
         </HeroContainer>
@@ -46,7 +46,7 @@ export default function Home({ homepageData }) {
 
       <Paper>
         <Section>
-          <h1 style={{ marginBottom: '0' }}>{home.titleThree}</h1>
+          <h1>{home.titleThree}</h1>
           <BlockContent blocks={home.descriptionThree} />
         </Section>
       </Paper>

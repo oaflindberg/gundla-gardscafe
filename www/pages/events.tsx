@@ -6,7 +6,7 @@ import Layout from 'components/Layout/Layout'
 import Card from 'components/Card/Card'
 import EventForm from 'components/Forms/EventForm/EventForm'
 import Section from 'components/Section/Section'
-import { Container } from 'styles/Event'
+import { Container, Events } from 'styles/Event'
 
 export default function EventPage({ eventData, eventPageData }) {
   const pageData = eventPageData[0]
@@ -23,7 +23,7 @@ export default function EventPage({ eventData, eventPageData }) {
         <BlockContent blocks={pageData.descriptionOne} />
       </Container>
       <Section style={{ marginRight: 0 }}>
-        <div style={{ display: 'flex', overflowX: 'scroll' }}>
+        <Events>
           {eventData.map((event, i) => {
             return (
               <Card
@@ -35,7 +35,7 @@ export default function EventPage({ eventData, eventPageData }) {
               />
             )
           })}
-        </div>
+        </Events>
       </Section>
       <Section>
         <EventForm />

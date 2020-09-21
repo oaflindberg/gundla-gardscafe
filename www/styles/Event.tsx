@@ -19,3 +19,8 @@ export const Container = styled.div`
     padding: 0;
   }
 `
+
+export const Events = styled.div`
+  display: flex;
+  overflow-x: scroll;
+`

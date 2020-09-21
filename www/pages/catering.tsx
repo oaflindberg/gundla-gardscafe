@@ -6,7 +6,7 @@ import Layout from 'components/Layout/Layout'
 import Section from 'components/Section/Section'
 import ContactForm from 'components/Forms/ContactForm/ContactForm'
 import MenuItem from 'components/MenuItem/MenuItem'
-import { BtnContainer, CateringBtns, Image } from 'styles/Catering'
+import { BtnContainer, CateringBtns, Image, Container } from 'styles/Catering'
 
 export default function CateringPage({ cateringData, menuData }) {
   const catering = cateringData[0]
@@ -15,15 +15,10 @@ export default function CateringPage({ cateringData, menuData }) {
 
   return (
     <Layout pageTitle="Gundla Gårdscafé | Catering">
-      <Section
+      <Container
         style={{
           backgroundImage: `url(${urlFor(catering.heroImage).toString()})`,
-          margin: 0,
-          height: '50vh',
-          color: '#eee',
           backgroundSize: 'cover',
-          textAlign: 'center',
-          justifyContent: 'center',
         }}
       >
         <h1>{catering.pageTitle}</h1>
@@ -45,7 +40,7 @@ export default function CateringPage({ cateringData, menuData }) {
             {catering.menu_title}
           </CateringBtns>
         </BtnContainer>
-      </Section>
+      </Container>
       {!isMenu ? (
         <>
           <>
