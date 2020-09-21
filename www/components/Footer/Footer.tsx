@@ -25,7 +25,9 @@ export default function Footer() {
       {data && (
         <StyledFooter>
           <ButtonContainer>
-            <button type="button">{data.find_us}</button>
+            <a href="https://www.google.com/maps/place/Gundla+mosse+32,+412+76+G%C3%B6teborg/@57.6863848,12.0264269,17z/data=!3m1!4b1!4m5!3m4!1s0x464ff3e9fab7c319:0x881e787529cd7b7c!8m2!3d57.6863848!4d12.0286156">
+              <button type="button">{data.find_us}</button>
+            </a>
             <Link href="/gallery">
               <a>
                 <button type="button">{data.gallery}</button>
