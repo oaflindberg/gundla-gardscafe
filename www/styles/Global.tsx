@@ -39,6 +39,10 @@ const GlobalStyle = () => {
           margin: 0 0 50px 0;
           padding: 10px 50px;
           width: 50%;
+
+          @media screen and (min-width: 768px) {
+            width: 15vw;
+          }
         }
       `}
     />
