@@ -11,7 +11,10 @@ export default function Home({ homepageData }) {
   return (
     <Layout pageTitle="Gundla Gårdscafé | Startsida">
       <Section
-        style={{ backgroundImage: `url(${urlFor(home.heroImage).toString()})` }}
+        style={{
+          backgroundImage: `url(${urlFor(home.heroImage).toString()})`,
+          margin: 0,
+        }}
       >
         <h1 style={{ color: 'white' }}>{home.titleOne}</h1>
         <BlockContent blocks={home.descriptionOne} />
