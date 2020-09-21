@@ -22,5 +22,6 @@ export const Btn = styled.button`
   cursor: pointer;
 
   @media screen and (min-width: 768px) {
+    width: 30vw;
   }
 `
