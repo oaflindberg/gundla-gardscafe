@@ -37,4 +37,9 @@ export const StyledForm = styled.fieldset`
     width: 100%;
     font-family: 'Inter', sans-serif;
   }
+
+  @media screen and (min-width: 768px) {
+    align-items: flex-start;
+    width: 30vw;
+  }
 `

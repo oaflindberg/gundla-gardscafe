@@ -10,6 +10,7 @@ export const StyledCard = styled.div`
   h1 {
     margin: 0;
     margin-right: 20px;
+    font-size: 3rem;
   }
 
   h3 {
@@ -21,8 +22,9 @@ export const StyledCard = styled.div`
     padding-right: 20px;
   }
   img {
+    height: 20vh;
     width: 100%;
-    height: auto;
+    object-fit: cover;
   }
 
   p {

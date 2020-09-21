@@ -2,7 +2,6 @@ import styled from '@emotion/styled'
 
 export const StyledForm = styled.fieldset`
   display: flex;
-  justify-content: space-evenly;
   flex-direction: column;
   align-items: center;
   height: auto;
@@ -15,35 +14,32 @@ export const StyledForm = styled.fieldset`
     font-weight: 500;
   }
 
-  input[type='submit'] {
-    background: #47996d;
-    border-radius: 40px;
-    border: none;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.08);
-    color: #fbf3e0;
-    font-size: 1.2rem;
-    margin: 50px auto;
-    padding: 10px 50px;
-    width: 50%;
-    cursor: pointer;
-  }
-
   input {
-    margin: 5px 0;
-    width: 100%;
-    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.1);
+    background: #fff8ed;
     border-radius: 16px;
     border: none;
-    padding: 5px 0 5px 5px;
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.1);
+    margin: 5px 0;
+    height: 5vh;
+    padding-left: 10px;
+    font-family: 'Inter', sans-serif;
+    width: 100%;
   }
 
   textarea {
-    width: 100%;
-    height: 25vh;
-    resize: none;
-    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.1);
+    background: #fff8ed;
     border-radius: 16px;
     border: none;
-    padding: 5px 0 5px 5px;
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.1);
+    height: 25vh;
+    padding: 10px 0 0 10px;
+    resize: none;
+    width: 100%;
+    font-family: 'Inter', sans-serif;
+  }
+
+  @media screen and (min-width: 768px) {
+    align-items: flex-start;
+    width: 30vw;
   }
 `
