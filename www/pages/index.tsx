@@ -6,6 +6,7 @@ import BlockContent from '@sanity/block-content-to-react'
 import { Paper, Btn } from 'styles/Startpage'
 
 export default function Home({ homepageData }) {
+  console.log(homepageData)
   const home = homepageData[0]
 
   return (
