@@ -1,19 +1,21 @@
-import { StyledCard } from './style'
+import { StyledCard, MainInfo } from './style'
 
 interface CardProps {
   title: String
   date: String
-  description: String
+  description: string
+  image: string
 }
 
-export default function Card({ title, date, description }: CardProps) {
+export default function Card({ image, title, date, description }: CardProps) {
   return (
     <StyledCard>
-      <div>
+      <img src={image} alt={description} />
+      <MainInfo>
         <h1>{title}</h1>
-        <p>{description}</p>
-      </div>
-      <h3>{date}</h3>
+        <h3>{date}</h3>
+      </MainInfo>
+      <p>{description}</p>
     </StyledCard>
   )
 }
