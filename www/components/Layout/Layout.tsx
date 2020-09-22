@@ -24,6 +24,7 @@ const Layout = ({ children, pageTitle }: LayoutProps) => {
           name="keywords"
           content="café, cafe, kafe, kafé, fika, kaffe sommar, natur, sommarcafé, sommarkafé"
         />
+        <link rel="shortcut icon" href="favicon.svg" type="image/x-icon" />
         <link
           href="https://fonts.googleapis.com/css2?family=Cookie&family=Inter:wght@300;400;500;700&display=swap"
           rel="stylesheet"
