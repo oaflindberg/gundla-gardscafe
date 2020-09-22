@@ -19,3 +19,16 @@ export const Container = styled.div`
     padding: 0;
   }
 `
+
+export const InstagramFeed = styled.div`
+  margin: 0 10vw;
+  display: flex;
+  width: 80vw;
+  flex-wrap: wrap;
+`
+
+export const Image = styled.img`
+  width: 20%;
+  height: auto;
+  margin: 20px;
+`
