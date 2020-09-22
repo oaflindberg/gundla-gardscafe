@@ -30,12 +30,6 @@ export default function ContactForm() {
       action="https://formspree.io/maylwjvn"
       method="post"
       onSubmit={sendEmail}
-      style={{
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'flex-start',
-        flexDirection: 'column',
-      }}
     >
       <StyledForm id="fs-frm-inputs">
         <label htmlFor="full-name">Namn</label>
