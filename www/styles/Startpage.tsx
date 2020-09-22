@@ -1,6 +1,4 @@
 import styled from '@emotion/styled'
-import BlockContent from '@sanity/block-content-to-react'
-import Section from 'components/Section/Section'
 
 export const Paper = styled.div`
   background: url('/images/pieceofpaper.png');

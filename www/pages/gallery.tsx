@@ -14,8 +14,6 @@ export default function GalleryPage({ galleryData }) {
         return res.json()
       })
       .then((feed) => {
-        console.log(feed)
-
         setGallery(feed)
       })
   }, [])
