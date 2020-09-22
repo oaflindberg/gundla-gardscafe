@@ -20,6 +20,10 @@ const Layout = ({ children, pageTitle }: LayoutProps) => {
           name="Description"
           content="Vi är ett utomhuscafé i kanten av Delsjö Naturreservat som utöver smarrig fika och härliga sallader, erbjuder en skön och avslappnad miljö bort från stress och oro. Här ersätter vi stadens brus med trädens sus."
         />
+        <meta
+          name="keywords"
+          content="café, cafe, kafe, kafé, fika, kaffe sommar, natur, sommarcafé, sommarkafé"
+        />
         <link
           href="https://fonts.googleapis.com/css2?family=Cookie&family=Inter:wght@300;400;500;700&display=swap"
           rel="stylesheet"
