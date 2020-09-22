@@ -32,7 +32,7 @@ export const StyledCard = styled.div`
   }
 
   @media screen and (min-width: 768px) {
-    width: 25vw;
+    min-width: 20vw;
   }
 `
 
@@ -40,5 +40,5 @@ export const MainInfo = styled.div`
   display: flex;
   padding: 20px;
   justify-content: space-between;
-  align-items: flex-end;
+  align-items: center;
 `

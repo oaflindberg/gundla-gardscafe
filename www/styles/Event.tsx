@@ -25,6 +25,6 @@ export const Events = styled.div`
   overflow-x: scroll;
 
   @media screen and (min-width: 768px) {
-    margin-left: 10vw;
+    margin: 0 10vw;
   }
 `
