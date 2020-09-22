@@ -7,6 +7,7 @@ import Section from 'components/Section/Section'
 import HeroContainer from 'components/HeroContainer/HeroContainer'
 import {
   Paper,
+  PaperTextContainer,
   Btn,
   SectionContainer,
   StyledSection,
@@ -52,9 +53,9 @@ export default function Home({ homepageData }) {
       <Paper>
         <Section style={{ alignItems: 'center' }}>
           <h1>{home.titleThree}</h1>
-          <div style={{ width: '50%' }}>
+          <PaperTextContainer>
             <BlockContent blocks={home.descriptionThree} />
-          </div>
+          </PaperTextContainer>
         </Section>
       </Paper>
       <img

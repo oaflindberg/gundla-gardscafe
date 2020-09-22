@@ -6,9 +6,34 @@ export const Paper = styled.div`
   background-size: contain;
   height: auto;
   padding: 5vh 0;
+  background-repeat: none;
+  margin: 5vh 0;
 
   h1 {
     margin-bottom: 0;
+    margin-top: 0;
+    font-size: 3rem;
+
+    @media screen and (min-width: 768px) {
+      font-size: 4rem;
+    }
+  }
+
+  p {
+    font-size: 0.9rem;
+
+    @media screen and (min-width: 768px) {
+      font-size: 1rem;
+    }
+  }
+`
+
+export const PaperTextContainer = styled.div`
+  width: 100%;
+  padding: 0 20px;
+
+  @media screen and (min-width: 768px) {
+    width: 50%;
   }
 `
 
