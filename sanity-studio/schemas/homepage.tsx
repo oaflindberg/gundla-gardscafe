@@ -50,6 +50,11 @@ export default {
       },
     },
     {
+      name: 'imageTwo_description',
+      title: 'Bild_2_Beskrivning',
+      type: 'string',
+    },
+    {
       name: 'titleThree',
       title: 'Rubrik_3',
       type: 'string',
@@ -66,6 +71,11 @@ export default {
       options: {
         hotspot: true,
       },
+    },
+    {
+      name: 'imageThree_description',
+      title: 'Bild_3_Beskrivning',
+      type: 'string',
     },
     {
       name: 'calendar_button',

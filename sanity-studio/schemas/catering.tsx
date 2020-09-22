@@ -45,6 +45,11 @@ export default {
       },
     },
     {
+      name: 'imageOne_description',
+      title: 'Bildbeskrivning',
+      type: 'string',
+    },
+    {
       name: 'catering_description',
       title: 'Cateringbeskrivning',
       type: 'blockContent',

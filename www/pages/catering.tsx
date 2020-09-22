@@ -47,7 +47,10 @@ export default function CateringPage({ cateringData, menuData }) {
             <h1>{catering.title}</h1>
             <BlockContent blocks={catering.catering_description} />
           </Section>
-          <Image src={urlFor(catering.imageOne).toString()} />
+          <Image
+            src={urlFor(catering.imageOne).toString()}
+            alt={catering.imageOne_description}
+          />
           <Section>
             <h1>{catering.titleTwo}</h1>
             <BlockContent blocks={catering.event_description} />

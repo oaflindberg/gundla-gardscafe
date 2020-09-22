@@ -15,6 +15,7 @@ import {
 
 export default function Home({ homepageData }) {
   const home = homepageData[0]
+  console.log(home)
 
   return (
     <Layout pageTitle="Gundla Gårdscafé | Startsida">
@@ -41,7 +42,10 @@ export default function Home({ homepageData }) {
             <Btn type="button">{home.calendar_button}</Btn>
           </Link>
         </StyledSection>
-        <Image src={urlFor(home.imageTwo).toString()} />
+        <Image
+          src={urlFor(home.imageTwo).toString()}
+          alt={home.imageTwo_description}
+        />
       </SectionContainer>
 
       <Paper>
@@ -53,6 +57,7 @@ export default function Home({ homepageData }) {
       <img
         style={{ objectFit: 'cover' }}
         src={urlFor(home.imageThree).toString()}
+        alt={home.imageThree_description}
       />
     </Layout>
   )
