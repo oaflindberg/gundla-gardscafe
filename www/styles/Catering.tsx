@@ -13,6 +13,7 @@ export const CateringBtns = styled.button`
   color: #fff;
   font-size: 2rem;
   font-family: 'Inter', sans-serif;
+  cursor: pointer;
 `
 
 export const Image = styled.img`
