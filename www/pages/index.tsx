@@ -29,7 +29,9 @@ export default function Home({ homepageData }) {
         <HeroContainer>
           <h1>{home.titleOne}</h1>
           <BlockContent blocks={home.descriptionOne} />
-          <Btn type="button">{home.catering_button}</Btn>
+          <Link href="/catering">
+            <Btn type="button">{home.catering_button}</Btn>
+          </Link>
         </HeroContainer>
       </Section>
 
