@@ -15,7 +15,6 @@ import {
 
 export default function Home({ homepageData }) {
   const home = homepageData[0]
-  console.log(home)
 
   return (
     <Layout pageTitle="Gundla Gårdscafé | Startsida">

@@ -26,9 +26,21 @@ export const Image = styled.img`
 `
 
 export const Container = styled.div`
-  height: 50vh;
-  margin: 0;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
   color: #eee;
-  text-align: center;
+  font-weight: 500;
+  margin: 0;
+  padding: 0 20px;
   justify-content: center;
+  align-items: center;
+
+  @media screen and (min-width: 768px) {
+    padding-left: 0;
+    text-align: center;
+    color: #eee;
+    font-weight: 500;
+    padding: 0;
+  }
 `
