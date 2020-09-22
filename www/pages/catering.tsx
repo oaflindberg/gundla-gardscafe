@@ -24,6 +24,7 @@ export default function CateringPage({ cateringData, menuData }) {
         <h1>{catering.pageTitle}</h1>
         <BtnContainer>
           <CateringBtns
+            style={{ fontWeight: !isMenu ? 'bold' : 'normal' }}
             type="button"
             onClick={() => {
               setIsMenu(false)
@@ -32,6 +33,7 @@ export default function CateringPage({ cateringData, menuData }) {
             {catering.contact_title}
           </CateringBtns>
           <CateringBtns
+            style={{ fontWeight: isMenu ? 'bold' : 'normal' }}
             type="button"
             onClick={() => {
               setIsMenu(true)

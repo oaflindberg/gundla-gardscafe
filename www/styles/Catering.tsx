@@ -14,6 +14,10 @@ export const CateringBtns = styled.button`
   font-size: 2rem;
   font-family: 'Inter', sans-serif;
   cursor: pointer;
+
+  &:focus {
+    outline: none;
+  }
 `
 
 export const Image = styled.img`
