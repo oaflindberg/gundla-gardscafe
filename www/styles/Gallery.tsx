@@ -25,8 +25,8 @@ export const InstagramFeed = styled.div`
   display: flex;
   max-width: 100%;
   flex-wrap: wrap;
-  padding-top: 10px;
   justify-content: space-evenly;
+  padding: 5vh 0;
 
   @media screen and (min-width: 768px) {
     margin: 0 10vw;
@@ -36,10 +36,11 @@ export const InstagramFeed = styled.div`
 
 export const Image = styled.img`
   border-radius: 8px;
+  width: 100%;
 `
 
 export const ImageContainer = styled.div`
-  width: 40%;
+  width: 30%;
   height: auto;
   margin: 20px;
   border-radius: 8px;

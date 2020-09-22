@@ -58,11 +58,14 @@ export default function GalleryPage({ galleryData }) {
       <InstagramFeed>
         {imageArray.map((item, i) => {
           return (
-            <a key={i} href={`https://instagram.com/p/${item.node.shortcode}`}>
-              {/* <ImageContainer> */}
-              <Image src={item.node.thumbnail_resources[2].src} />
-              {/* </ImageContainer> */}
-            </a>
+            <ImageContainer key={i}>
+              <a
+                key={i}
+                href={`https://instagram.com/p/${item.node.shortcode}`}
+              >
+                <Image src={item.node.thumbnail_resources[2].src} />
+              </a>
+            </ImageContainer>
           )
         })}
       </InstagramFeed>
