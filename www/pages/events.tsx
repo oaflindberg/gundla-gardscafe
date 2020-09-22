@@ -22,7 +22,6 @@ export default function EventPage({ eventData, eventPageData }) {
         <h1>{pageData.pageTitle}</h1>
         <BlockContent blocks={pageData.descriptionOne} />
       </Container>
-      {/* <Section style={{ marginRight: 0 }}> */}
       <Events>
         {eventData.map((event, i) => {
           return (
@@ -36,7 +35,6 @@ export default function EventPage({ eventData, eventPageData }) {
           )
         })}
       </Events>
-      {/* </Section> */}
       <Section>
         <EventForm />
       </Section>

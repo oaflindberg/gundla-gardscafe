@@ -16,6 +16,10 @@ const Layout = ({ children, pageTitle }: LayoutProps) => {
         <title>{pageTitle}</title>
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+          name="Description"
+          content="Vi är ett utomhuscafé i kanten av Delsjö Naturreservat som utöver smarrig fika och härliga sallader, erbjuder en skön och avslappnad miljö bort från stress och oro. Här ersätter vi stadens brus med trädens sus."
+        />
         <link
           href="https://fonts.googleapis.com/css2?family=Cookie&family=Inter:wght@300;400;500;700&display=swap"
           rel="stylesheet"

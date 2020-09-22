@@ -5,6 +5,7 @@ import urlFor from 'utils/urlBuilder'
 import { Container } from 'styles/Gallery'
 
 export default function GalleryPage({ galleryData }) {
+  const pageData = galleryData[0]
   const [gallery, setGallery] = useState<any>()
 
   useEffect(() => {
@@ -19,13 +20,11 @@ export default function GalleryPage({ galleryData }) {
     <Layout pageTitle="Gundla Gårdscafé | Galleri">
       <Container
         style={{
-          backgroundImage: `url(${urlFor(
-            galleryData[0].heroImage
-          ).toString()})`,
+          backgroundImage: `url(${urlFor(pageData.heroImage).toString()})`,
           backgroundSize: 'cover',
         }}
       >
-        <h1>{galleryData[0].pageTitle}</h1>
+        <h1>{pageData.pageTitle}</h1>
       </Container>
     </Layout>
   )
