@@ -35,6 +35,10 @@ export const InstagramFeed = styled.div`
 `
 
 export const Image = styled.img`
+  border-radius: 8px;
+`
+
+export const ImageContainer = styled.div`
   width: 40%;
   height: auto;
   margin: 20px;

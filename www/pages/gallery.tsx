@@ -2,7 +2,7 @@ import Layout from 'components/Layout/Layout'
 import { useEffect, useState } from 'react'
 import client from 'client/api'
 import urlFor from 'utils/urlBuilder'
-import { Container, InstagramFeed, Image } from 'styles/Gallery'
+import { Container, InstagramFeed, Image, ImageContainer } from 'styles/Gallery'
 
 export default function GalleryPage({ galleryData }) {
   const pageData = galleryData[0]
@@ -57,7 +57,13 @@ export default function GalleryPage({ galleryData }) {
       </Container>
       <InstagramFeed>
         {imageArray.map((item, i) => {
-          return <Image key={i} src={item.node.thumbnail_resources[2].src} />
+          return (
+            <ImageContainer key={i}>
+              <a href={`https://instagram.com/p/${item.node.shortcode}`}>
+                <Image src={item.node.thumbnail_resources[2].src} />
+              </a>
+            </ImageContainer>
+          )
         })}
       </InstagramFeed>
     </Layout>
