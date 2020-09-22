@@ -5,7 +5,7 @@ import Section from 'components/Section/Section'
 export const Paper = styled.div`
   background: url('/images/pieceofpaper.png');
   text-align: center;
-  background-size: cover;
+  background-size: contain;
   height: auto;
   padding: 5vh 0;
 
