@@ -54,12 +54,19 @@ export const ContactContainer = styled.div`
   flex-direction: column;
   align-items: center;
 
+  a {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.99rem;
+  }
+
   div {
+    display: flex;
+    align-items: center;
     text-align: center;
     margin-bottom: 15px;
   }
 
   img {
-    padding: 5px 5px 0 5px;
+    margin: 0 5px;
   }
 `
