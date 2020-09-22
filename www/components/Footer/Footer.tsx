@@ -50,11 +50,11 @@ export default function Footer() {
           </Container>
           <ContactContainer>
             <div>
-              <img src="/icons/phone_mobile.svg" />
+              <img src="/icons/phone_mobile.svg" alt="phone icon" />
               <a href="tel:+46708840717">{data.phone_number}</a>
             </div>
             <div>
-              <img src="/icons/mail_mobile.svg" />
+              <img src="/icons/mail_mobile.svg" alt="email icon" />
               <a href={`mailto:${data.email}`}>{data.email}</a>
             </div>
           </ContactContainer>
