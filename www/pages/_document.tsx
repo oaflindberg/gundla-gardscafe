@@ -1,10 +1,10 @@
-import Document, { Head, Main, NextScript } from 'next/document';
-import { extractCritical } from 'emotion-server';
+import Document, { Html, Head, Main, NextScript } from 'next/document'
+import { extractCritical } from 'emotion-server'
 
 export default class MyDocument extends Document {
   static async getInitialProps(ctx) {
-    const initialProps = await Document.getInitialProps(ctx);
-    const styles = extractCritical(initialProps.html);
+    const initialProps = await Document.getInitialProps(ctx)
+    const styles = extractCritical(initialProps.html)
     return {
       ...initialProps,
       styles: (
@@ -16,18 +16,19 @@ export default class MyDocument extends Document {
           />
         </>
       ),
-    };
+    }
   }
 
   render() {
     return (
       <html>
         <Head />
+        <Html lang="sv" />
         <body>
           <Main />
           <NextScript />
         </body>
       </html>
-    );
+    )
   }
 }
