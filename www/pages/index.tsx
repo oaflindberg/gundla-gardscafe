@@ -50,9 +50,11 @@ export default function Home({ homepageData }) {
       </SectionContainer>
 
       <Paper>
-        <Section>
+        <Section style={{ alignItems: 'center' }}>
           <h1>{home.titleThree}</h1>
-          <BlockContent blocks={home.descriptionThree} />
+          <div style={{ width: '50%' }}>
+            <BlockContent blocks={home.descriptionThree} />
+          </div>
         </Section>
       </Paper>
       <img
