@@ -14,6 +14,8 @@ export default function GalleryPage({ galleryData }) {
         return res.json()
       })
       .then((feed) => {
+        console.log(feed)
+
         setGallery(feed)
       })
   }, [])
@@ -21,6 +23,26 @@ export default function GalleryPage({ galleryData }) {
   let imageArray = []
   if (gallery) {
     imageArray = gallery.graphql.user.edge_owner_to_timeline_media.edges
+  }
+
+  if (imageArray.length == 0) {
+    return (
+      <div
+        style={{
+          width: '100vw',
+          height: '100vh',
+          display: 'flex',
+          justifyContent: 'center',
+          alignItems: 'center',
+        }}
+      >
+        <img
+          style={{ width: '50px', height: '50px' }}
+          src="/icons/spinner.gif"
+          alt="Spinner logo"
+        />
+      </div>
+    )
   }
 
   return (
@@ -34,8 +56,8 @@ export default function GalleryPage({ galleryData }) {
         <h1>{pageData.pageTitle}</h1>
       </Container>
       <InstagramFeed>
-        {imageArray.map((hej, i) => {
-          return <Image src={hej.node.thumbnail_resources[2].src} />
+        {imageArray.map((item, i) => {
+          return <Image key={i} src={item.node.thumbnail_resources[2].src} />
         })}
       </InstagramFeed>
     </Layout>

@@ -21,14 +21,26 @@ export const Container = styled.div`
 `
 
 export const InstagramFeed = styled.div`
-  margin: 0 10vw;
+  margin: 20px;
   display: flex;
-  width: 80vw;
+  max-width: 100%;
   flex-wrap: wrap;
+  padding-top: 10px;
+  justify-content: space-evenly;
+
+  @media screen and (min-width: 768px) {
+    margin: 0 10vw;
+    width: 80vw;
+  }
 `
 
 export const Image = styled.img`
-  width: 20%;
+  width: 40%;
   height: auto;
   margin: 20px;
+  border-radius: 8px;
+
+  @media screen and (min-width: 768px) {
+    width: 20%;
+  }
 `
