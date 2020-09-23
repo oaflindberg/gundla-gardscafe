@@ -37,7 +37,7 @@ export default function ContactForm() {
           type="text"
           name="name"
           id="full-name"
-          placeholder="Jane Doe"
+          placeholder="Förnamn Efternamn"
           required={true}
         />
         <label htmlFor="email-address">Mail</label>

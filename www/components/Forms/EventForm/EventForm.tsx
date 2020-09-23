@@ -37,7 +37,7 @@ export default function EventForm() {
           type="text"
           name="event"
           id="event"
-          placeholder="Jane Doe"
+          placeholder="Namn på evenemang"
           required={true}
         />
         <label htmlFor="full-name">Namn</label>
@@ -45,7 +45,7 @@ export default function EventForm() {
           type="text"
           name="name"
           id="full-name"
-          placeholder="Jane Doe"
+          placeholder="Förnamn Efternamn"
           required={true}
         />
         <label htmlFor="email-address">Mail</label>
