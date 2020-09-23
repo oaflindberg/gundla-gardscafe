@@ -10,7 +10,11 @@ export const StyledCard = styled.div`
   h1 {
     margin: 0;
     margin-right: 20px;
-    font-size: 3rem;
+    font-size: 5vmax;
+
+    @media screen and (min-width: 768px) {
+      font-size: 3vmax;
+    }
   }
 
   h3 {
@@ -18,8 +22,12 @@ export const StyledCard = styled.div`
     font-weight: 500;
     height: max-content;
     margin: 0;
-    font-size: 1.4rem;
+    font-size: 2vmax;
     padding-right: 20px;
+
+    @media screen and (min-width: 768px) {
+      font-size: 1.4vmax;
+    }
   }
   img {
     height: 20vh;
