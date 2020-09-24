@@ -49,3 +49,17 @@ export const ImageContainer = styled.div`
     width: 20%;
   }
 `
+
+export const SpinnerContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  background: #fff8f6;
+`
+
+export const Spinner = styled.img`
+  height: 70px;
+  width: 70px;
+`

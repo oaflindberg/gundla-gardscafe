@@ -2,7 +2,14 @@ import Layout from 'components/Layout/Layout'
 import { useEffect, useState } from 'react'
 import client from 'client/api'
 import urlFor from 'utils/urlBuilder'
-import { Container, InstagramFeed, Image, ImageContainer } from 'styles/Gallery'
+import {
+  Container,
+  InstagramFeed,
+  Image,
+  ImageContainer,
+  SpinnerContainer,
+  Spinner,
+} from 'styles/Gallery'
 
 export default function GalleryPage({ galleryData }) {
   const pageData = galleryData[0]
@@ -25,21 +32,9 @@ export default function GalleryPage({ galleryData }) {
 
   if (imageArray.length == 0) {
     return (
-      <div
-        style={{
-          width: '100vw',
-          height: '100vh',
-          display: 'flex',
-          justifyContent: 'center',
-          alignItems: 'center',
-        }}
-      >
-        <img
-          style={{ width: '50px', height: '50px' }}
-          src="/icons/spinner.gif"
-          alt="Spinner logo"
-        />
-      </div>
+      <SpinnerContainer>
+        <Spinner src="/icons/spinner.gif" alt="Spinner logo" />
+      </SpinnerContainer>
     )
   }
 
