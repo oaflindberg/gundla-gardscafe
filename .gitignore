@@ -3,6 +3,7 @@ yarn.lock
 .DS_Store
 
 sanity-studio/node_modules
+sanity-studio/dist
 sanity-studio/.DS_Store
 
 www/.DS_Store
