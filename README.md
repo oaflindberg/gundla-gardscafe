@@ -1,6 +1,7 @@
 ## Gundla Gårdscafé
 
-School assignment - create a website for Gundla Gårdscafé.
+School assignment at Yrgo 2020 - create a website for Gundla Gårdscafé. <br>
+Visit the website [here](https://gundlagardscafe.netlify.app/)
 
 ## Built with
 
@@ -15,7 +16,6 @@ School assignment - create a website for Gundla Gårdscafé.
 
 <img src="https://i.imgur.com/3YERTc3.png" width="100%">
 <br>
-<br>
 
 ### Mobile 
 <br>
@@ -23,14 +23,17 @@ School assignment - create a website for Gundla Gårdscafé.
 <img src="https://i.imgur.com/89NpIDA.png" width="50%">
 
 <br>
-<br>
 
 ## Authors
 
 - [Andreas Lindberg](https://github.com/oaflindberg)
 - [Thomas Sönnerstam](https://github.com/ThomasSonnerstam)
 
-## Design
+## Digital design
 
 - Daniel Englund
 - Gustav Norrhäll
+
+## License
+
+- This project is licensed under MIT License, see the [LICENSE](https://github.com/oaflindberg/gundla-gardscafe/blob/master/LICENSE) file for details.
