@@ -1,0 +1,14 @@
+{
+  "name": "gundla",
+  "version": "0.0.1",
+  "scripts": {
+    "test": "prettier --check */*/*.tsx"
+  },
+  "devDependencies": {
+    "prettier": "^2.1.2"
+  },
+  "prettier": {
+    "semi": false,
+    "singleQuote": true
+  }
+}

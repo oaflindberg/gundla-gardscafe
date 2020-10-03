@@ -1,10 +1,10 @@
-import sanityClient from "@sanity/client";
+import sanityClient from '@sanity/client'
 
 const client = sanityClient({
   projectId: '6r4koqux',
   dataset: 'production',
   token: '',
-  useCdn: true
-});
+  useCdn: true,
+})
 
-export default client;
+export default client
