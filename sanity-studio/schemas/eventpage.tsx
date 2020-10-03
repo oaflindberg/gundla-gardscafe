@@ -22,4 +22,4 @@ export default {
       type: 'blockContent',
     },
   ],
-};
+}
